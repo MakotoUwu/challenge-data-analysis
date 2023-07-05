@@ -14,14 +14,13 @@ df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 # fill missing values with a specific value
 df = df.fillna("0")
 
+print(df.head())
+
 #Step 2 : Data Analysis
 
 # Get the number of rows and columns using df.shape
 rows, cols = df.shape
-
-# Plot a bar chart of the number of rows and columns using plotly.express
-fig = px.bar(x=["Rows", "Columns"], y=[rows, cols], title="Number of Rows and Columns in the DataFrame")
-#fig.show()
+print(f"The dataset has {rows} rows and {cols} columns.")
 
 # Select only the numeric columns
 numeric_cols = ['Price of property in euro', 'Kitchen', 'Number of bedrooms', 'Living area', 'Terrace area', 'Garden', 'Garden area', 'Surface of the land(or plot of land)', 'Number of facades','Swimming pool']
