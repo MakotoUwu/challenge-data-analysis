@@ -26,30 +26,29 @@ print(f"The dataset has {rows} rows and {cols} columns.")
 #better to make one for belgium and
 
 def get_region(zip_code):
-    if 1000 <= zip_code < 1300:
-        return 'Brussels region'
-    elif 1300 <= zip_code < 1500:
-        return 'Walloon Brabant region'
-    elif 1500 <= zip_code < 2000:
-        return 'Flemish Brabant region'
-    elif 2000 <= zip_code < 3000:
-        return 'Antwerp region'
-    elif 3000 <= zip_code < 3500:
-        return 'Flemish Brabant region'
-    elif 3500 <= zip_code < 4000:
-        return 'Limburg region'
-    elif 4000 <= zip_code < 5000:
-        return 'Liege region'
-    elif 5000 <= zip_code < 6000:
-        return 'Namur region'
-    elif 6000 <= zip_code < 7000:
-        return 'Hainaut region'
-    elif 7000 <= zip_code < 8000:
-        return 'Hainaut region'
-    elif 8000 <= zip_code < 9000:
-        return 'West Flanders region'
+    if 1000 <= zip_code <= 1299:
+        return 'Brussels-Capital Region'
+    elif 1300 <= zip_code <= 1499:
+        return 'Province of Walloon Brabant'
+    elif (1500 <= zip_code <= 1999) or (3000 <= zip_code <= 3499):
+        return 'Province of Flemish Brabant'
+    elif 2000 <= zip_code <= 2999:
+        return 'Province of Antwerp'
+    elif 3500 <= zip_code <= 3999:
+        return 'Province of Limburg'
+    elif 4000 <= zip_code <= 4999:
+        return 'Province of Liege'
+    elif 5000 <= zip_code <= 5999:
+        return 'Province of Namur'
+    elif (6000 <= zip_code <= 6599) or (7000 <= zip_code <= 7999):
+        return 'Province of Hainaut'
+    elif 6600 <= zip_code <= 6999:
+        return 'Province of Luxembourg'
+    elif 8000 <= zip_code <= 8999:
+        return 'Province of West Flanders'
     elif 9000 <= zip_code <= 9999:
-        return 'East Flanders region'
+        return 'Province of East Flanders'
+
 
 # Ensure that the 'Zip code' column is in integer format
 df['Zip code'] = df['Zip code'].astype(int)
@@ -68,7 +67,7 @@ for (region, type_of_property), group_df in df.groupby(['Region', 'Type of prope
         numeric_cols = ['Price of property in euro', 'Kitchen', 'Number of bedrooms', 'Living area', 'Terrace area', 'Garden', 'Garden area', 'Surface of the land(or plot of land)', 'Number of facades', 'Swimming pool']
     
     corr = group_df[numeric_cols].corr()
-    fig = px.imshow(corr, title=f"Correlation Matrix of Variables and Price in {region} for {type_of_property}", zmin=-1, zmax=1)
+    fig = px.imshow(corr, title=f"Correlation matrix of variables and price in {region} for {type_of_property}", zmin=-1, zmax=1)
     fig.show()
 
 
