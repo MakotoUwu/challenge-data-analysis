@@ -12,9 +12,15 @@ df = df.drop_duplicates()
 #Removing leading and trailing spaces
 df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
-# fill missing values with a specific value
-df = df.fillna("0")
+# Calculating percentage of missing data in each column
+missing_percentage = df.isnull().sum() * 100 / len(df)
+print("Percentage of missing data in each column: ")
+print(missing_percentage)
 
+# fill missing values with a specific value
+df.loc[:, df.dtypes == np.float64] = df.loc[:, df.dtypes == np.float64].fillna(0)
+df.loc[:, df.dtypes == np.int64] = df.loc[:, df.dtypes == np.int64].fillna(0)
+df.loc[:, df.dtypes == object] = df.loc[:, df.dtypes == object].fillna('unknown')
 print(df.head())
 
 #Step 2 : Data Analysis
