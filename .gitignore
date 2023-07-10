@@ -128,6 +128,7 @@ ENV/
 env.bak/
 venv.bak/
 .data_visualization_env
+data_visualization_env/
 
 # Spyder project settings
 .spyderproject
