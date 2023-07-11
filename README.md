@@ -51,7 +51,7 @@ Run each notebook from the terminal or command line:
 <a name="visuals"></a>
 ## Visuals
 
-All the visuals and  can be found in the respective Jupyter notebooks. Ex:
+All the visuals can be found in the respective Jupyter notebooks. Ex:
 
 ![My Image](visuals/output.png)
 ![My Image](visuals/newplot.png)
