@@ -18,8 +18,6 @@ The goal of this project is to provide ImmoEliza with the insights they need to 
 
 The project involves extensive data cleaning, data analysis using tools such as pandas, matplotlib and seaborn, and presenting the interpreted results using simple words and relevant visuals.
 
-This project is part of the AI Bootcamp at BeCode.org.
-
 In my opinion the most important variables are:
 - Area: This is the total living area of the property in square meters. It seems obvious that this would have a strong influence on the price, as larger properties tend to be more expensive than smaller ones. This variable also has a high correlation with price in the dataset.
 - Rooms: This is the number of rooms in the property. This could also affect the price, as more rooms could mean more space, comfort and functionality. This variable also has a moderate correlation with price in the dataset.
@@ -89,3 +87,5 @@ The challenge was completed in 5 days from (06/07/2023) to (11/07/2023)
 ## Personal Situation
 
 As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
+
+This project is part of the AI Bootcamp at BeCode.org
