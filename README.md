@@ -1,5 +1,5 @@
 # challenge-data-analysis
-Data analysis challenge for a real estate company that wants to predict prices on Belgium’s sales using a cleaned and visualized dataset. 🏠
+This repository is created for the data analysis challenge by ImmoEliza. The aim of this challenge is to analyze a dataset that contains real estate sales data for properties in Belgium. 🏠
 
 ## Table of Contents
 1. [Description](#description)
@@ -17,6 +17,8 @@ Data analysis challenge for a real estate company that wants to predict prices o
 The goal of this project is to provide ImmoEliza with the insights they need to establish themselves as the biggest real estate company in Belgium. By analyzing the data, I aim to answer questions related to the correlation between various variables and the property price, the most and least expensive municipalities in Belgium, and other related questions.
 
 The project involves extensive data cleaning, data analysis using tools such as pandas, matplotlib and seaborn, and presenting the interpreted results using simple words and relevant visuals.
+
+This project is part of the AI Bootcamp at BeCode.org.
 
 <a name="installation"></a>
 ## Installation
@@ -46,23 +48,36 @@ Run each notebook from the terminal or command line:
 All the visuals can be found in the respective Jupyter notebooks. Ex:
 
 ![My Image](visuals/output.png)
+![My Image](visuals/newplot.png)
 
 <a name="files"></a>
 ## Files and Directories
 
-Your content here
+1. `property_data.csv`: This file contains the raw dataset for the project.
+2. `subtype_of_property_vs_price.ipynb`: This Jupyter notebook contains a visualization showing the relationship between the price and each subtype of properties.
+3. `represent_surface_histogram.ipynb`: This Jupyter notebook contains a histogram representing the number of properties according to their surface.
+4. `/matrix_corr`:
+    - `matrix_Belgium.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in Belgium.
+    - `matrix_Regions.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in every region in Belgium.
+5. `/mean_median_meter_price`:
+    - `Bel_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Belgium.
+    - `Fla_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Flanders.
+    - `Wal_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Wallonia.
+6. `requirements.txt`: This file lists all of the Python libraries that your system needs to run the notebooks.
+
 
 <a name="contributors"></a>
 ## Contributors
 
-Your content here
+Oleksandr Tsepukh (Junior Data Scientist in BeCode)
+[LinkedIn](https://www.linkedin.com/in/oleksandr-tsepukh-ba4985279)
 
 <a name="timeline"></a>
 ## Timeline
 
-Your content here
+The challenge was completed in 5 days from (06/07/2023) to (11/07/2023)
 
 <a name="personal_situation"></a>
 ## Personal Situation
 
-Your content here
+As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
