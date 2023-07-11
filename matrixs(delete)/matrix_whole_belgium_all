@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import numpy as np
+import matplotlib.pyplot as plt
 
 def load_data(path):
     """
@@ -14,6 +15,24 @@ def load_data(path):
     """
     df = pd.read_csv(path)
     return df
+
+def calculate_missing_values(df, exclude_cols):
+    """
+    Calculate and return percentage of missing values in each column except those in exclude_cols.
+
+    Parameters:
+    df (DataFrame): The DataFrame for which to calculate missing values.
+    exclude_cols (list): The list of column names to exclude.
+
+    Returns:
+    missing_values_percentage: The percentage of missing values.
+    """
+    df = df.drop(columns=exclude_cols, errors='ignore')
+    missing_values_count = df.isnull().sum()
+    total_values = df.shape[0]
+    missing_values_percentage = (missing_values_count / total_values) * 100
+    return missing_values_percentage
+
 
 def clean_data(df):
     """
@@ -29,20 +48,40 @@ def clean_data(df):
     df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     return df
 
-def calculate_missing_values(df):
+def plot_missing_values(missing_values_percentage):
     """
-    Calculate and return percentage of missing values in each column.
+    Plot a bar chart of the percentage of missing values per category.
+
+    Parameters:
+    missing_values_percentage (Series): The Series containing the percentage of missing values.
+
+    Returns:
+    None
+    """
+    plt.figure(figsize=(10,8))
+    missing_values_percentage.sort_values(ascending=False).plot(kind='bar')
+    plt.title('Percentage of missing data per category')
+    plt.xlabel('Categories')
+    plt.ylabel('Percentage of missing data')
+    plt.show()
+
+def calculate_missing_values(df, exclude_cols):
+    """
+    Calculate and return percentage of missing values in each column except those in exclude_cols.
 
     Parameters:
     df (DataFrame): The DataFrame for which to calculate missing values.
+    exclude_cols (list): The list of column names to exclude.
 
     Returns:
     missing_values_percentage: The percentage of missing values.
     """
+    df = df.drop(columns=exclude_cols, errors='ignore')
     missing_values_count = df.isnull().sum()
     total_values = df.shape[0]
     missing_values_percentage = (missing_values_count / total_values) * 100
     return missing_values_percentage
+
 
 def fill_missing_values(df):
     """
@@ -136,7 +175,10 @@ def visualize_corr(corr):
 if __name__ == "__main__":
     df = load_data("property_data.csv")
     df = clean_data(df)
-    print(calculate_missing_values(df))
+    exclude_cols = ['Raw num:']
+    missing_values_percentage = calculate_missing_values(df, exclude_cols)
+    print(missing_values_percentage)
+    plot_missing_values(missing_values_percentage)
     df = fill_missing_values(df)
     rows, cols = df.shape
     print(f"The dataset has {rows} rows and {cols} columns.")
