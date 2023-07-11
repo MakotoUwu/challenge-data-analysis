@@ -45,7 +45,7 @@ Run each notebook from the terminal or command line:
 
 All the visuals can be found in the respective Jupyter notebooks. Ex:
 
-![My Image](images/my-image.jpg)
+![My Image](visuals/output.png)
 
 <a name="files"></a>
 ## Files and Directories
