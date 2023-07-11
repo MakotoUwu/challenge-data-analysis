@@ -38,7 +38,7 @@ The project requires Python 3.7+ and the following Python libraries installed:
 - Seaborn
 - Plotly
 
-To instakk any missing dependencies, use pip:
+To install any missing dependencies, use pip:
 
 ```pip install -r requirements.txt```
 
