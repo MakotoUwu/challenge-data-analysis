@@ -2,14 +2,15 @@
 This repository is created for the data analysis challenge by ImmoEliza. The aim of this challenge is to analyze a dataset that contains real estate sales data for properties in Belgium. 🏠
 
 ## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Visuals](#visuals)
-5. [Files and Directories](#files)
-6. [Contributors](#contributors)
-7. [Timeline](#timeline)
-8. [Personal Situation](#personal_situation)
+1. [Description](#description) 📄
+2. [Installation](#installation) 💻
+3. [Usage](#usage) 🛠️
+4. [Visuals](#visuals) 🖼️
+5. [Files and Directories](#files) 📂
+6. [Contributors](#contributors) 👥
+7. [Timeline](#timeline) 🗓️
+8. [Personal Situation](#personal_situation) 💡
+
 
 <a name="description"></a>
 ## Description
