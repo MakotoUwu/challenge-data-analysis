@@ -31,14 +31,14 @@ The project requires Python 3.7+ and the following Python libraries installed:
 
 To instakk any missing dependencies, use pip:
 
-```pip install -r requirements.txt```
+`pip install -r requirements.txt`
 
 <a name="usage"></a>
 ## Usage
 
 Run each notebook from the terminal or command line:
 
-```ipython notebook <name_of_notebook.ipynb>```
+`ipython notebook <name_of_notebook.ipynb>`
 
 <a name="visuals"></a>
 ## Visuals
