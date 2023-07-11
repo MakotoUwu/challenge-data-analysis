@@ -76,8 +76,7 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 <a name="contributors"></a>
 ## Contributors
 
-Oleksandr Tsepukh (Junior Data Scientist in BeCode)
-[LinkedIn](https://www.linkedin.com/in/oleksandr-tsepukh-ba4985279)
+[Oleksandr Tsepukh (Junior Data Scientist at BeCode)](https://www.linkedin.com/in/oleksandr-tsepukh-ba4985279)
 
 <a name="timeline"></a>
 ## Timeline
