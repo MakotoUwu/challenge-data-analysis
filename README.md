@@ -9,7 +9,8 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 5. [Files and Directories](#files) 📂
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
-8. [Personal Situation](#personal_situation) 💡
+8. [Personal Situation](#personal_situation) 🛂
+9. [Future Improvements/Additions](#Future_Improvements/Additions)
 
 
 <a name="description"></a>
@@ -100,3 +101,6 @@ The challenge was completed in 5 days from (06/07/2023) to (11/07/2023)
 As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, scikit-learn, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
 
 This project is part of the AI Bootcamp at BeCode.org
+
+<a name="Future_Improvements/Additions"></a>
+## Future Improvements/Additions 
