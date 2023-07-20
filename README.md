@@ -37,6 +37,7 @@ The project requires Python 3.7+ and the following Python libraries installed:
 - matplotlib
 - Seaborn
 - Plotly
+- Scikit-learn
 
 To install any missing dependencies, use pip:
 
@@ -54,22 +55,32 @@ Run each notebook from the terminal or command line:
 
 All the visuals can be found in the respective Jupyter notebooks. Ex:
 
-![My Image](visuals/output.png)
-![My Image](visuals/newplot.png)
+![My Image](output/output.png)
+![My Image](output/newplot.png)
+![My Image](output/predict.png)
+![My Image](output/predict2.png)
 
 <a name="files"></a>
 ## Files and Directories
 
-1. `property_data.csv`: This file contains the raw dataset for the project.
-2. `subtype_of_property_vs_price.ipynb`: This Jupyter notebook contains a visualization showing the relationship between the price and each subtype of properties.
-3. `represent_surface_histogram.ipynb`: This Jupyter notebook contains a histogram representing the number of properties according to their surface.
-4. `/matrix_corr`:
-    - `matrix_Belgium.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in Belgium.
-    - `matrix_Regions.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in every region in Belgium.
-5. `/mean_median_meter_price`:
-    - `Bel_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Belgium.
+1. `/data`:
+    - `property_data.csv`: This file contains the raw dataset for the project. 
+2. `/data-exploration`:
+    - `Bel_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Belgium. 
+    - `subtype_of_property_vs_price.ipynb`: This Jupyter notebook contains a visualization showing the relationship between the price and each subtype of properties.
     - `Fla_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Flanders.
-    - `Wal_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Wallonia.
+    - `Wal_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Wallonia.  
+    - `matrix_Belgium.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in Belgium.
+    - `matrix_Regions.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in every region in Belgium.  
+    - `represent_surface_histogram.ipynb`: This Jupyter notebook contains a histogram representing the number of properties according to their surface.
+3. `/model-building`:
+    - `model_building.ipynb`: This notebook contains a complete data analysis pipeline, which involves data preprocessing, training machine learning models, and visualizing the model's performance for predicting property prices across different property types and regions.
+4. `/src`:
+    - `data_preprocessing.py`: This script handles data loading, cleaning, and preprocessing for property data analysis and model training.
+    - `data_visualization.py`: This script shows plots which predicted property prices based on 'Living area' using Linear Regression.
+    - `model_training.py`: This script fits, predicts, and evaluates Linear Regression and XGBoost models on property data, handling model training, performance metrics calculation, and data split/scaling.
+5. `/output`: This folder contains examples various graphical representations and plots generated from the data analysis, providing visual insights into property prices and model performances.
+6. `README.md`: Contain all instracture
 6. `requirements.txt`: This file lists all of the Python libraries that your system needs to run the notebooks.
 
 
@@ -86,6 +97,6 @@ The challenge was completed in 5 days from (06/07/2023) to (11/07/2023)
 <a name="personal_situation"></a>
 ## Personal Situation
 
-As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
+As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, scikit-learn, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
 
 This project is part of the AI Bootcamp at BeCode.org
