@@ -6,7 +6,7 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 2. [Installation](#installation) 💻
 3. [Usage](#usage) 🛠️
 4. [Visuals](#visuals) 🖼️
-5. [Files and Directories](#files) 📂
+5. [Files and Directories](#fils) 📂
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
 8. [Personal Situation](#personal_situation) 🛂
@@ -65,7 +65,7 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 ![My Image](output/predict.png)
 ![My Image](output/predict2.png)
 
-<a name="files"></a>
+<a name="fils"></a>
 ## Files and Directories
 
 1. `/data`:
