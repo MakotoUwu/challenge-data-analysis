@@ -51,7 +51,7 @@ To install any missing dependencies, use pip:
 <a name="usage"></a>
 ## Usage
 
-All expalinig you can find in ipynb files. Run each notebook from the terminal or command line:
+All explanations you can find in ipynb files. Run each notebook from the terminal or command line:
 
 ```ipython notebook <name_of_notebook.ipynb>```
 
