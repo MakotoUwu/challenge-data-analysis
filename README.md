@@ -109,5 +109,5 @@ This project is part of the AI Bootcamp at BeCode.org
 <a name="Future_Improvements/Additions"></a>
 ## Future Improvements/Additions 
 
-- Making more reaserching in every region to make model fit well
+- Making more reaserching in every region to make model fit better🥴
 - Encode non-numerical data to numerical with get_dummies or OneHotEncoder
