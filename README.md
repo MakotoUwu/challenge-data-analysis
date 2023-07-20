@@ -53,7 +53,7 @@ To install any missing dependencies, use pip:
 
 All explanations you can find in ipynb files. Run each notebook from the terminal or command line:
 
-```ipython notebook <name_of_notebook.ipynb>```
+```ipython notebook .\path\<name_of_notebook.ipynb>```
 
 <a name="visuals"></a>
 ## Visuals
