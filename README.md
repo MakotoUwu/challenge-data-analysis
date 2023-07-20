@@ -31,7 +31,7 @@ In my opinion the most important variables are:
 <a name="installation"></a>
 ## Installation
 
-![Python Version](https://img.shields.io/badge/Python-3.xx-orange) ![Easy](https://img.shields.io/badge/Easy-for you-green)
+![Python Version](https://img.shields.io/badge/Python-3.xx-orange) ![Easy](https://img.shields.io/badge/Easy-for_you-green)
 
 
 The project requires Python 3.7+ and the following Python libraries installed:
