@@ -39,6 +39,7 @@ The project requires Python 3.7+ and the following Python libraries installed:
 - Seaborn
 - Plotly
 - Scikit-learn
+- etc.
 
 To install any missing dependencies, use pip:
 
