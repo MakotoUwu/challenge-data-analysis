@@ -109,5 +109,5 @@ This project is part of the AI Bootcamp at BeCode.org
 <a name="futuree"></a>
 ## Future Improvements/Additions 
 
-- Making more reaserching in every region to make model for West Flanders fit better🥴
+- Making more reaserching in region West Flanders to make model fit better🥴
 - Encode non-numerical data to numerical with get_dummies or OneHotEncoder
