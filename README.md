@@ -107,3 +107,4 @@ This project is part of the AI Bootcamp at BeCode.org
 ## Future Improvements/Additions 
 
 - Making more reaserching in every region to make model fit well
+- Encode non-numerical data to numerical with get_dummies or OneHotEncoder
