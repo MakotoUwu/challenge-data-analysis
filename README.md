@@ -10,7 +10,7 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
 8. [Personal Situation](#personal_situation) 🛂
-9. [Future Improvements/Additions](#Future_Improvements) 🔜
+9. [Future Improvements/Additions](#futuree) 🔜
 
 
 <a name="description"></a>
@@ -106,7 +106,7 @@ As a student at BeCode in Ghent, this project presented an opportunity to apply 
 
 This project is part of the AI Bootcamp at BeCode.org
 
-<a name="Future_Improvement"></a>
+<a name="futuree"></a>
 ## Future Improvements/Additions 
 
 - Making more reaserching in every region to make model for West Flanders fit better🥴
