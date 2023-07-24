@@ -112,6 +112,3 @@ def split_data(X, y):
 
     # Return the training and test sets
     return X_train, X_test, y_train, y_test
-
-
-    return X_train, X_test, y_train, y_test
