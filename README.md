@@ -10,7 +10,7 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
 8. [Personal Situation](#personal_situation) 🛂
-9. [Future Improvements/Additions](#Future_Improvements/Additions) 🔜
+9. [Future Improvements/Additions](#futuree) 🔜
 
 
 <a name="description"></a>
@@ -53,7 +53,7 @@ To install any missing dependencies, use pip:
 
 All explanations you can find in ipynb files. Run each notebook from the terminal or command line:
 
-```ipython notebook <name_of_notebook.ipynb>```
+```ipython notebook .\path\<name_of_notebook.ipynb>```
 
 <a name="visuals"></a>
 ## Visuals
@@ -106,8 +106,8 @@ As a student at BeCode in Ghent, this project presented an opportunity to apply 
 
 This project is part of the AI Bootcamp at BeCode.org
 
-<a name="Future_Improvements/Additions"></a>
+<a name="futuree"></a>
 ## Future Improvements/Additions 
 
-- Making more reaserching in every region to make model for West Flanders fit better🥴
+- Making more reaserching in region West Flanders to make model fit better🥴
 - Encode non-numerical data to numerical with get_dummies or OneHotEncoder
