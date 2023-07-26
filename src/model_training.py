@@ -1,3 +1,5 @@
+import os
+import pickle
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -5,6 +7,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from xgboost import XGBRegressor
+
+os.makedirs('../models', exist_ok=True)
 
 def train_and_test_model(model, X_train, X_test, y_train, y_test, property_type, region):
     """
@@ -30,6 +34,10 @@ def train_and_test_model(model, X_train, X_test, y_train, y_test, property_type,
     # Fit the model to the training data
     model.fit(X_train, y_train)
 
+    # Save the trained model to disk
+    filename = f'../models/{property_type}_{region}_model.pickle'
+    pickle.dump(model, open(filename, 'wb'))
+
     # Make predictions on the training set and the test set
     y_train_pred = model.predict(X_train)
     y_test_pred = model.predict(X_test)
@@ -49,6 +57,7 @@ def train_and_test_model(model, X_train, X_test, y_train, y_test, property_type,
     # Calculate the coefficient of determination (R^2) for the test set and print it
     print(f'Coefficient of determination R^2 (test) for {property_type} in {region}: %.2f'
           % r2_score(y_test, y_test_pred))
+
     
 def train_models(X_train, X_test, y_train, y_test, property_type, region):
     """
