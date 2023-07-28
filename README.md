@@ -110,4 +110,4 @@ This project is part of the AI Bootcamp at BeCode.org
 ## Future Improvements/Additions 
 
 - Making more reaserching in region West Flanders to make model fit better🥴
-- Encode non-numerical data to numerical with get_dummies or OneHotEncoder
+- Encode non-numerical data to numerical with get_dummies or OneHotEncoder in model training part(in data-exploration it works well)
