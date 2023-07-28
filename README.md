@@ -8,7 +8,7 @@ This repository houses the project for ImmoEliza's data challenge. It focuses on
 2. [Installation](#installation) 💻
 3. [Usage](#usage) 🛠️
 4. [Visuals](#visuals) 🖼️
-5. [Files and Directories](#fils) 📂
+5. [Files and Directories](#files_and_directories) 📂
 6. [API](#api) 🌐
 7. [Docker](#docker) 🐳
 8. [Contributors](#contributors) 👥
@@ -71,7 +71,7 @@ All explanations you can find in ipynb files. Run each notebook from the termina
 
 <a name="api"></a>
 ## API
-The API is hosted on Render and is available at the following link:
+The API is hosted on Render and is available at the following link (I have a free version and sometimes it needs to be restarted manually):
 
 https://real-estate-prediction-api.onrender.com
 
@@ -125,7 +125,7 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 ![My Image](output/predict.png)
 ![My Image](output/predict2.png)
 
-<a name="fils"></a>
+<a name="files_and_directories"></a>
 ## Files and Directories
 
 1. `/models`:
@@ -160,14 +160,20 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 <a name="timeline"></a>
 ## Timeline
 
-The challenge was completed in 5 days from (06/07/2023) to (11/07/2023)
+The challenge was completed in during working days from (11/07/2023) to (28/07/2023)
 
 <a name="personal_situation"></a>
 ## Personal Situation
 
-As a student at BeCode in Ghent, this project presented an opportunity to apply and strengthen my data analysis skills. From meticulous data cleaning to strategic data interpretation, every step was a learning experience. Despite the challenges, I successfully utilized Python libraries like pandas, scikit-learn, matplotlib, and seaborn to derive meaningful insights from the data. This project was a significant milestone in my data analysis journey, reinforcing my analytical capabilities and passion for the field.
+Since the inception of my journey with BeCode's AI Bootcamp in Ghent, I've had the privilege to delve deeper into the intricacies of data analysis, and this project has served as a significant learning curve. It wasn't just about exploring new concepts, but also about effectively applying them to uncover valuable insights.
 
-This project is part of the AI Bootcamp at BeCode.org
+During the course of this project, I expanded my repertoire of tools by exploring new libraries and APIs. I had the opportunity to work with the ImmoEliza API and JSON files, which broadened my understanding of working with real-time data.
+
+Moreover, I also gained proficiency in advanced data visualization libraries like Plotly beyond the traditional matplotlib and seaborn. This allowed me to present data insights more interactively and visually appealing.
+
+In addition, the project introduced me to the world of machine learning with libraries like scikit-learn and XGBoost. This helped me make more accurate predictions about the real estate prices and understand the importance of tuning models to enhance their performance.
+
+Overall, this project was a step up in my data analytics journey. The learnings from this project have not only strengthened my data analysis skills but also made me more confident to face the increasingly complex data scenarios in the future. I look forward to leveraging these skills and tools in my upcoming projects and challenges.
 
 <a name="futuree"></a>
 ## Future Improvements/Additions 
