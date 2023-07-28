@@ -1,6 +1,7 @@
-![My Image](output/RealAPI.png)
 # Challenge-data-analysis
 This repository is created for the data analysis challenge by ImmoEliza. The aim of this challenge is to analyze a dataset that contains real estate sales data and price predictions for properties in Belgium. 🏠
+
+![My Image](output/RealAPI.png)
 
 ## Table of Contents
 1. [Description](#description) 📄
