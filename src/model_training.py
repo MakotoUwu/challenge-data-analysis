@@ -31,11 +31,15 @@ def train_and_test_model(model, X_train, X_test, y_train, y_test, property_type,
     None
     """
 
+    # Drop the 'region' and 'property_type' features from the training and testing sets
+    X_train = X_train.drop(['Region', 'Type of property'], axis=1)
+    X_test = X_test.drop(['Region', 'Type of property'], axis=1)
+
     # Fit the model to the training data
     model.fit(X_train, y_train)
 
     # Save the trained model to disk
-    filename = f'../models/{property_type}_{region}_model.pickle'
+    filename = f'./models/{property_type}_{region}_model.pickle'
     pickle.dump(model, open(filename, 'wb'))
 
     # Make predictions on the training set and the test set
