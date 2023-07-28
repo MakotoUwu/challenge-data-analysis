@@ -9,20 +9,20 @@ This repository houses the project for ImmoEliza's data challenge. It focuses on
 3. [Usage](#usage) 🛠️
 4. [Visuals](#visuals) 🖼️
 5. [Files and Directories](#fils) 📂
-6. [Contributors](#contributors) 👥
-7. [Timeline](#timeline) 🗓️
-8. [Personal Situation](#personal_situation) 🛂
-9. [API](#api) 🌐
-10. [Docker](#docker) 🐳
-11. [Future Improvements/Additions](#futuree) 🔜
+6. [API](#api) 🌐
+7. [Docker](#docker) 🐳
+8. [Contributors](#contributors) 👥
+9. [Timeline](#timeline) 🗓️
+11. [Personal Situation](#personal_situation) 🛂
+12. [Future Improvements/Additions](#futuree) 🔜
 
 
 <a name="description"></a>
 ## Description
 
-The goal of this project is to provide ImmoEliza with the insights they need to establish themselves as the biggest real estate company in Belgium. By analyzing the data, I aim to answer questions related to the correlation between various variables and the property price, the most and least expensive municipalities in Belgium, and other related questions.
+This project serves as a comprehensive data analysis solution aimed at providing ImmoEliza with actionable insights to solidify its position as a top-tier real estate company in Belgium. Through rigorous data analysis, the project uncovers key determinants of property prices, identifies the most and least expensive municipalities, among other relevant insights. 
 
-The project involves extensive data cleaning, data analysis using tools such as pandas, matplotlib and seaborn, and presenting the interpreted results using simple words and relevant visuals.
+Leveraging the power of data analytics tools such as pandas, matplotlib, and seaborn, the data undergoes a thorough cleaning process followed by meticulous analysis. The outcomes are then translated into simple language and compelling visuals for easy comprehension and usability. This endeavor not only addresses the fundamental queries but also paves the way for strategic decision-making for ImmoEliza.
 
 In my opinion the most important variables are:
 - Living area: This is the total living area of the property in square meters. It seems obvious that this would have a strong influence on the price, as larger properties tend to be more expensive than smaller ones. This variable also has a high correlation with price in the dataset.
@@ -102,7 +102,19 @@ In case of an error (missing or invalid data, or server error), it returns an er
 }
 ```
 
-Docker
+<a name="docker"></a>
+## Docker
+The application is also containerized using Docker.
+
+Build the Docker image with:
+```
+docker build -t <your-image-name> .
+```
+Run the Docker container with:
+```
+docker run -p <your-port>:80 <your-image-name>
+```
+
 <a name="visuals"></a>
 ## Visuals
 
