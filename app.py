@@ -98,7 +98,7 @@ def predict_price(
         prediction = model.predict(features)
 
         # Return the prediction in the response
-        return {"prediction": float(prediction[0])}
+        return {"prediction price in euro": float(prediction[0])}
 
     except Exception as e:
         # If anything goes wrong during prediction, return a 500 error with the details of the exception
