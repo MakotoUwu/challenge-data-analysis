@@ -20,9 +20,7 @@ This repository houses the project for ImmoEliza's data challenge. It focuses on
 <a name="description"></a>
 ## Description
 
-This project serves as a comprehensive data analysis solution aimed at providing ImmoEliza with actionable insights to solidify its position as a top-tier real estate company in Belgium. Through rigorous data analysis, the project uncovers key determinants of property prices, identifies the most and least expensive municipalities, among other relevant insights. 
-
-Leveraging the power of data analytics tools such as pandas, matplotlib, and seaborn, the data undergoes a thorough cleaning process followed by meticulous analysis. The outcomes are then translated into simple language and compelling visuals for easy comprehension and usability. This endeavor not only addresses the fundamental queries but also paves the way for strategic decision-making for ImmoEliza.
+This project provides ImmoEliza with key insights to enhance its position in Belgium's real estate market. Using advanced data analytics tools, we clean, analyze and interpret real estate data, identifying price determinants and the market's most and least expensive areas. The results, presented in a user-friendly format, support strategic decision-making for the company.
 
 In my opinion the most important variables are:
 - Living area: This is the total living area of the property in square meters. It seems obvious that this would have a strong influence on the price, as larger properties tend to be more expensive than smaller ones. This variable also has a high correlation with price in the dataset.
