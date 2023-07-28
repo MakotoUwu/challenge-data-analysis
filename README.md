@@ -1,5 +1,4 @@
 # ImmoEliza Property Analysis and Price Prediction
-This repository houses the project for ImmoEliza's data challenge. It focuses on analyzing and predicting property prices in Belgium using a comprehensive real estate dataset. The project utilizes Python libraries for data cleaning, analysis, visualization, and modeling. Additionally, it includes a FastAPI-based API, dockerized for easy deployment, serving property price predictions. 🏠
 
 ![My Image](output/RealAPI.png)
 
@@ -20,7 +19,8 @@ This repository houses the project for ImmoEliza's data challenge. It focuses on
 <a name="description"></a>
 ## Description
 
-This project provides ImmoEliza with key insights to enhance its position in Belgium's real estate market. Using advanced data analytics tools, we clean, analyze and interpret real estate data, identifying price determinants and the market's most and least expensive areas. The results, presented in a user-friendly format, support strategic decision-making for the company.
+This repository houses the project for ImmoEliza's data challenge. It focuses on analyzing and predicting property prices in Belgium using a comprehensive real estate dataset. The project utilizes Python libraries for data cleaning, analysis, visualization, and modeling. Additionally, it includes a FastAPI-based API, dockerized for easy deployment, serving property price predictions. 🏠
+
 
 In my opinion the most important variables are:
 - Living area: This is the total living area of the property in square meters. It seems obvious that this would have a strong influence on the price, as larger properties tend to be more expensive than smaller ones. This variable also has a high correlation with price in the dataset.
