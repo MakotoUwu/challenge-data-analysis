@@ -1,5 +1,5 @@
-# Challenge-data-analysis
-This repository is created for the data analysis challenge by ImmoEliza. The aim of this challenge is to analyze a dataset that contains real estate sales data and price predictions for properties in Belgium. 🏠
+# ImmoEliza Property Analysis and Price Prediction
+This repository houses the project for ImmoEliza's data challenge. It focuses on analyzing and predicting property prices in Belgium using a comprehensive real estate dataset. The project utilizes Python libraries for data cleaning, analysis, visualization, and modeling. Additionally, it includes a FastAPI-based API, dockerized for easy deployment, serving property price predictions. 🏠
 
 ![My Image](output/RealAPI.png)
 
@@ -12,7 +12,7 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
 8. [Personal Situation](#personal_situation) 🛂
-9. [API](#api)🌐
+9. [API](#api) 🌐
 10. [Docker](#docker) 🐳
 11. [Future Improvements/Additions](#futuree) 🔜
 
@@ -46,11 +46,21 @@ The project requires Python 3.7+ and the following Python libraries installed:
 - Seaborn
 - Plotly
 - Scikit-learn
+- FastApi
 - etc.
 
 To install any missing dependencies, use pip:
 
 ```pip install -r requirements.txt```
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/<username>/ImmoEliza-Property-Analysis-and-Prediction.git`
+2. Navigate to the project directory: `cd ImmoEliza-Property-Analysis-and-Prediction`
+3. Install the dependencies: `pip install -r requirements.txt`
+4. Run the FastAPI server: `uvicorn app:app --reload`
+
+The application will be available at `http://localhost:8000`.
 
 <a name="usage"></a>
 ## Usage
@@ -59,6 +69,40 @@ All explanations you can find in ipynb files. Run each notebook from the termina
 
 ```ipython notebook .\path\<name_of_notebook.ipynb>```
 
+<a name="api"></a>
+## API
+The API is hosted on Render and is available at the following link:
+
+https://real-estate-prediction-api.onrender.com
+
+It has two routes available:
+
+- GET / - Returns a welcome message
+- POST /predict - Accepts a form with the following fields:
+    - `type_of_property` (either 'house' or 'apartment')
+    - `number_of_bedrooms` (float, must be non-negative)
+    - `living_area` (float, must be non-negative)
+    - `terrace_area` (float, must be non-negative)
+    - `surface_of_land` (float, must be non-negative)
+    - `number_of_facades` (float, must be non-negative)
+    - `region` (string, must be one of the valid regions)
+
+All fields are mandatory. The data should be sent as form-data.
+
+```On success, it returns a JSON response with the predicted property price:
+{
+  "prediction price in euro": 450000.0
+}
+```
+In case of an error (missing or invalid data, or server error), it returns an error image message with cats🐈‍⬛ in the following format:
+
+```
+{
+"detail": An error occurred during prediction: (image). Please try again."
+}
+```
+
+Docker
 <a name="visuals"></a>
 ## Visuals
 
@@ -72,9 +116,11 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 <a name="fils"></a>
 ## Files and Directories
 
-1. `/data`:
+1. `/models`:
+    - This directory contains the trained machine learning models (in .pickle format) used for the property price prediction. Each property type and region has its own model.
+2. `/data`:
     - `property_data.csv`: This file contains the raw dataset for the project. 
-2. `/data-exploration`:
+3. `/data-exploration`:
     - `Bel_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Belgium. 
     - `subtype_of_property_vs_price.ipynb`: This Jupyter notebook contains a visualization showing the relationship between the price and each subtype of properties.
     - `Fla_mean_medium_price.ipynb`: This notebook shows plots for Mean, median, and price per meter for properties in Flanders.
@@ -82,17 +128,17 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
     - `matrix_Belgium.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in Belgium.
     - `matrix_Regions.ipynb`: This notebook contains a heatmap matrix correlation between price and variables in every region in Belgium.  
     - `represent_surface_histogram.ipynb`: This Jupyter notebook contains a histogram representing the number of properties according to their surface.
-3. `/model-building`:
+4. `/model-building`:
     - `model_building.ipynb`: This notebook contains a complete data analysis pipeline, which involves data preprocessing, training machine learning models, and visualizing the model's performance for predicting property prices across different property types and regions.
-4. `/src`:
+5. `/src`:
     - `data_preprocessing.py`: This script handles data loading, cleaning, and preprocessing for property data analysis and model training.
     - `data_visualization.py`: This script shows plots which predicted property prices based on 'Living area' using Linear Regression.
     - `model_training.py`: This script fits, predicts, and evaluates Linear Regression and XGBoost models on property data, handling model training, performance metrics calculation, and data split/scaling.
-5. `/output`: This folder contains examples various graphical representations and plots generated from the data analysis, providing visual insights into property prices and model performances.
-6. `README.md`: Contain all instracture
-6. `requirements.txt`: This file lists all of the Python libraries that your system needs to run the notebooks.
-
-
+6. `/output`: This folder contains examples various graphical representations and plots generated from the data analysis, providing visual insights into property prices and model performances.
+7. `app.py`: This is the main script that runs the FastAPI application. It includes all the routes and their functionalities.
+8. `Dockerfile`: This file contains the necessary commands to build a Docker image for our FastAPI application.
+9. `README.md`: Contain all instructions.
+10. `requirements.txt`: This file lists all of the Python libraries that your system needs to run the notebooks.
 
 <a name="contributors"></a>
 ## Contributors
