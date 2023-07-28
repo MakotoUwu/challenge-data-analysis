@@ -1,3 +1,4 @@
+![My Image](output/RealAPI.png)
 # Challenge-data-analysis
 This repository is created for the data analysis challenge by ImmoEliza. The aim of this challenge is to analyze a dataset that contains real estate sales data and price predictions for properties in Belgium. 🏠
 
@@ -10,7 +11,9 @@ This repository is created for the data analysis challenge by ImmoEliza. The aim
 6. [Contributors](#contributors) 👥
 7. [Timeline](#timeline) 🗓️
 8. [Personal Situation](#personal_situation) 🛂
-9. [Future Improvements/Additions](#futuree) 🔜
+9. [API](#api)🌐
+10. [Docker](#docker) 🐳
+11. [Future Improvements/Additions](#futuree) 🔜
 
 
 <a name="description"></a>
@@ -87,6 +90,7 @@ All the visuals can be found in the respective Jupyter notebooks. Ex:
 5. `/output`: This folder contains examples various graphical representations and plots generated from the data analysis, providing visual insights into property prices and model performances.
 6. `README.md`: Contain all instracture
 6. `requirements.txt`: This file lists all of the Python libraries that your system needs to run the notebooks.
+
 
 
 <a name="contributors"></a>
